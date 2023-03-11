@@ -1,11 +1,32 @@
 import styled from "@emotion/styled";
 import { Link } from "gatsby";
 
-const StyledNav = styled("nav")``;
-const ElementList = styled("ul")``;
-const NavElement = styled("li")``;
-const NavLink = styled(Link)``;
-const MailLink = styled("a")``;
+const StyledNav = styled("nav")`
+  width: 70%;
+`;
+const ElementList = styled("ul")`
+  display: flex;
+  margin: 0;
+  height: 160px;
+  padding-top: 32px;
+  justify-content: space-between;
+`;
+const NavElement = styled("li")`
+  list-style: none;
+`;
+const NavLink = styled(Link)`
+  font-size: 24px;
+  color: black;
+  text-decoration: none;
+  :visited {
+    text-decoration: none;
+  }
+  :active,
+  :hover {
+    text-decoration: underline;
+  }
+`;
+const MailLink = NavLink.withComponent("a");
 
 const Nav = () => (
   <StyledNav>
@@ -23,6 +44,7 @@ const Nav = () => (
         <NavLink to="/author">Author</NavLink>
       </NavElement>
       <NavElement>
+        {/* @ts-ignore */}
         <MailLink href="mailto:samgray@gmail.com">Contact</MailLink>
       </NavElement>
     </ElementList>
