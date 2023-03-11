@@ -13,7 +13,7 @@ const config: GatsbyConfig = {
   jsxImportSource: "@emotion/react",
   plugins: [
     "gatsby-plugin-emotion",
-    "gatsby-plugin-google-gtag",
+    { resolve: "gatsby-plugin-google-gtag", options: { trackingIds: [] } },
     "gatsby-plugin-image",
     "gatsby-plugin-sitemap",
     {
