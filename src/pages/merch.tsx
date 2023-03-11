@@ -1,9 +1,9 @@
 import Layout from "../components/Layout";
 
-const BooksPage = () => (
+const MerchPage = () => (
   <Layout>
-    <h2>Books</h2>
+    <h2>Merch</h2>
   </Layout>
 );
 
-export default BooksPage;
+export default MerchPage;

@@ -1,9 +1,9 @@
 import Layout from "../components/Layout";
 
-const BooksPage = () => (
+const BlogPage = () => (
   <Layout>
-    <h2>Books</h2>
+    <h2>Blog</h2>
   </Layout>
 );
 
-export default BooksPage;
+export default BlogPage;
