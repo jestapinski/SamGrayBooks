@@ -1,9 +1,11 @@
 import Layout from "../components/Layout";
-import { H2 } from "../components/Text";
+import blogs from "../blogs";
 
 const BlogPage = () => (
   <Layout>
-    <H2>Blog</H2>
+    {blogs.map(({ Blog, name }) => (
+      <Blog key={name} />
+    ))}
   </Layout>
 );
 

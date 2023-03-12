@@ -2,6 +2,11 @@ import styled from "@emotion/styled";
 import { Link } from "gatsby";
 import Wave from "react-wavify";
 
+const activeStyle = {
+  fontWeight: "bold",
+  textDecoration: "underline",
+};
+
 const StyledNav = styled("nav")`
   width: 70%;
 `;
@@ -23,33 +28,54 @@ const NavLink = styled(Link)`
   }
   :active,
   :hover {
-    text-decoration: underline;
+    ${activeStyle}
   }
 `;
 
+const Subtitle = styled("h4")`
+  position: absolute;
+  bottom: 0px;
+  right: 16px;
+`;
+
 const StyledWave = styled(Wave)`
+  position: absolute;
+  bottom: 0;
   height: 30px;
+`;
+
+export const NAV_HEIGHT = "180px";
+
+const NavWrapper = styled("div")`
+  height: ${NAV_HEIGHT};
+  position: relative;
 `;
 
 const MailLink = NavLink.withComponent("a");
 
-export const NAV_HEIGHT = "94px";
-
 const Nav = () => (
-  <div style={{ height: NAV_HEIGHT }}>
+  <NavWrapper>
     <StyledNav>
       <ElementList>
         <NavElement>
-          <NavLink to="/">Books</NavLink>
+          <NavLink to="/" activeStyle={activeStyle}>
+            Books
+          </NavLink>
         </NavElement>
         <NavElement>
-          <NavLink to="/blog">Blog</NavLink>
+          <NavLink to="/blog" activeStyle={activeStyle}>
+            Blog
+          </NavLink>
         </NavElement>
         <NavElement>
-          <NavLink to="/merch">Merch</NavLink>
+          <NavLink to="/merch" activeStyle={activeStyle}>
+            Merch
+          </NavLink>
         </NavElement>
         <NavElement>
-          <NavLink to="/author">Author</NavLink>
+          <NavLink to="/author" activeStyle={activeStyle}>
+            Author
+          </NavLink>
         </NavElement>
         <NavElement>
           {/* @ts-ignore */}
@@ -57,6 +83,7 @@ const Nav = () => (
         </NavElement>
       </ElementList>
     </StyledNav>
+    <Subtitle>A book about body positivity and confidence</Subtitle>
     <StyledWave
       fill="black"
       paused={true}
@@ -66,7 +93,7 @@ const Nav = () => (
         points: 23,
       }}
     />
-  </div>
+  </NavWrapper>
 );
 
 export default Nav;
