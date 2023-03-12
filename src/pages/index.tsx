@@ -1,8 +1,9 @@
 import Layout from "../components/Layout";
+import { H2 } from "../components/Text";
 
 const BooksPage = () => (
   <Layout>
-    <h2>Books</h2>
+    <H2>Books</H2>
   </Layout>
 );
 

@@ -1,8 +1,9 @@
 import Layout from "../components/Layout";
+import { H2 } from "../components/Text";
 
 const AuthorPage = () => (
   <Layout>
-    <h2>Author</h2>
+    <H2>Author</H2>
   </Layout>
 );
 
