@@ -6,6 +6,7 @@ import { slide as Menu } from "react-burger-menu";
 const activeStyle = {
   fontWeight: "bold",
   textDecoration: "underline",
+  textDecorationStyle: "wavy",
 };
 
 const StyledNav = styled("nav")`
