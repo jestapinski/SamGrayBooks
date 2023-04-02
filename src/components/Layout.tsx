@@ -12,6 +12,9 @@ const Body = styled("main")`
   min-height: calc(100% - ${NAV_HEIGHT} - 32px); // Sub padding
   padding: 16px;
   text-align: center;
+  @media screen and (max-width: 480px) {
+    height: calc(100% - 96px - 64px);
+  }
 `;
 
 const FullHeight = styled("div")`
