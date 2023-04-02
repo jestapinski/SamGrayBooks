@@ -25,7 +25,7 @@ const NavElement = styled("li")`
   }
 `;
 const NavLink = styled(Link)`
-  font-size: 24px;
+  font-size: 36px;
   color: black;
   text-decoration: none;
   :visited {
@@ -73,7 +73,7 @@ const StyledMenuContainer = styled("div")`
     top: 0;
   }
   .bm-menu {
-    background-color: gray;
+    background-color: paleturquoise;
   }
   .bm-menu-wrap {
     top: 0;
