@@ -1,25 +1,25 @@
 import Layout from "../components/Layout";
-import books from "../books";
+import news from "../news";
 
-const BooksPage = () => (
+const BlogPage = () => (
   <Layout>
-    {books.map(({ Book, name }) => (
-      <Book key={name} />
+    {news.map(({ News, name }) => (
+      <News key={name} />
     ))}
   </Layout>
 );
 
 export const Head = () => (
   <>
-    <title>Books | Sam Gray Books</title>
+    <title>News | Sam Gray Books</title>
     <meta
       name="description"
-      content="Ella the Elephant and Growing Up - In this book, Ella and her friend Zara go to school and learn that everyone belongs!"
+      content="Read the latest news from the official Sam Gray site"
     />
-    <meta property="og:title" content="Books | Sam Gray Books" />
+    <meta property="og:title" content="News | Sam Gray Books" />
     <meta
       property="og:description"
-      content="Ella the Elephant and Growing Up"
+      content="Read the latest news from the official Sam Gray site."
     />
     {/* <meta
       property="og:image"
@@ -27,10 +27,10 @@ export const Head = () => (
     /> */}
     <meta name="twitter:card" content="summary_large_image" />
     {/* <meta name="twitter:site" content="@samgraybooks" /> */}
-    <meta name="twitter:title" content="Books | Sam Gray Books" />
+    <meta name="twitter:title" content="News | Sam Gray Books" />
     <meta
       name="twitter:description"
-      content="Ella the Elephant and Growing Up"
+      content="Read the latest news from the official Sam Gray site."
     />
     {/* <meta
       name="twitter:image"
@@ -39,4 +39,4 @@ export const Head = () => (
   </>
 );
 
-export default BooksPage;
+export default BlogPage;

@@ -13,4 +13,10 @@ body,
   padding: 0;
   overflow-x: hidden;
   font-family: FunKey-Regular;
+  letter-spacing: 1.5px;
+  line-height: 32px;
+}
+
+p {
+  font-size: 24px;
 }

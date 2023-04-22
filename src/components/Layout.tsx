@@ -21,13 +21,18 @@ const FullHeight = styled("div")`
   height: 100%;
 `;
 
+const MaxWidthContainer = styled("div")`
+  max-width: 1024px;
+  margin: auto;
+`;
+
 const Layout = ({ children }: { children?: any }) => (
   <FullHeight>
     <Header>
       <Nav />
     </Header>
     <Body>
-      <main>{children}</main>
+      <MaxWidthContainer>{children}</MaxWidthContainer>
     </Body>
   </FullHeight>
 );

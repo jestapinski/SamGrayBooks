@@ -44,10 +44,10 @@ const config: GatsbyConfig = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "blogs",
-        path: "./src/blogs/",
+        name: "news",
+        path: "./src/news/",
       },
-      __key: "blogs",
+      __key: "news",
     },
     {
       resolve: "gatsby-source-filesystem",

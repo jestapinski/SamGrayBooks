@@ -101,8 +101,8 @@ const NavLinks = () => (
       </NavLink>
     </NavElement>
     <NavElement>
-      <NavLink to="/blog" activeStyle={activeStyle}>
-        Blog
+      <NavLink to="/news" activeStyle={activeStyle}>
+        News
       </NavLink>
     </NavElement>
     <NavElement>
