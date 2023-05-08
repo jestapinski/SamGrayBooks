@@ -10,7 +10,7 @@ const activeStyle = {
 };
 
 const StyledNav = styled("nav")`
-  width: 70%;
+  margin: 0 32px;
 `;
 const ElementList = styled("ul")`
   display: flex;
@@ -20,7 +20,7 @@ const ElementList = styled("ul")`
 `;
 const NavElement = styled("li")`
   list-style: none;
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 930px) {
     margin-top: 18px;
     padding-left: 18px;
   }
@@ -31,6 +31,7 @@ const NavLink = styled(Link)`
   text-decoration: none;
   :visited {
     text-decoration: none;
+    color: inherit;
   }
   :active,
   :hover {
@@ -50,19 +51,25 @@ const StyledWave = styled(Wave)`
   height: 30px;
 `;
 
+const BuyLinkImage = styled("a")`
+  :hover {
+    opacity: 0.6;
+  }
+`;
+
 export const NAV_HEIGHT = "180px";
 
 const NavWrapper = styled("div")`
   height: ${NAV_HEIGHT};
   position: relative;
-  @media screen and (max-width: 480px) {
-    height: 96px;
+  @media screen and (max-width: 930px) {
+    height: 32px;
   }
 `;
 
 const StyledMenu = styled(Menu)``;
 const StyledMenuContainer = styled("div")`
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 930px) {
     display: none;
   }
   position: relative;
@@ -86,7 +93,7 @@ const StyledMenuContainer = styled("div")`
 `;
 
 const StyledDesktopMenuContainer = styled("div")`
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 930px) {
     display: none;
   }
 `;
@@ -127,6 +134,12 @@ const Nav = () => (
     <StyledMenuContainer>
       <StyledMenu>
         <NavLinks />
+        <NavElement>
+          {/* @ts-ignore */}
+          <MailLink href="https://www.amazon.com/dp/B0C4K3QCDC">
+            Buy Now
+          </MailLink>
+        </NavElement>
       </StyledMenu>
     </StyledMenuContainer>
 
@@ -135,6 +148,9 @@ const Nav = () => (
         <StyledNav>
           <ElementList>
             <NavLinks />
+            <BuyLinkImage href="https://www.amazon.com/dp/B0C4K3QCDC">
+              <img src="/images/cover.png" height="80px" width="120px" />
+            </BuyLinkImage>
           </ElementList>
         </StyledNav>
         <Subtitle>A book about body positivity and confidence</Subtitle>
