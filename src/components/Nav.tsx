@@ -149,7 +149,7 @@ const Nav = () => (
           <ElementList>
             <NavLinks />
             <BuyLinkImage href="https://www.amazon.com/dp/B0C4K3QCDC">
-              <img src="/images/cover.png" height="80px" width="120px" />
+              <img src="/images/cover.png" height="80px" width="103px" />
             </BuyLinkImage>
           </ElementList>
         </StyledNav>

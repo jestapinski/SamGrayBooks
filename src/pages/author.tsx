@@ -1,5 +1,6 @@
 import Layout from "../components/Layout";
 import { H2 } from "../components/Text";
+import image from "../images/sam.png";
 
 const AuthorPage = () => (
   <Layout>
@@ -8,6 +9,7 @@ const AuthorPage = () => (
       Sam Gray currently resides in NYC and is excited to be creating new works
       related to body positivity and creating growth mindsets for children.
     </p>
+    <img src={image} height="500px" width="400px" />
   </Layout>
 );
 
