@@ -1,12 +1,19 @@
+import styled from "@emotion/styled";
 import Layout from "../components/Layout";
 import news from "../news";
 
+const NewsLayout = styled(Layout)`
+  p {
+    text-align: justify;
+  }
+`;
+
 const BlogPage = () => (
-  <Layout>
+  <NewsLayout>
     {news.map(({ News, name }) => (
       <News key={name} />
     ))}
-  </Layout>
+  </NewsLayout>
 );
 
 export const Head = () => (

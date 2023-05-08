@@ -26,8 +26,14 @@ const MaxWidthContainer = styled("div")`
   margin: auto;
 `;
 
-const Layout = ({ children }: { children?: any }) => (
-  <FullHeight>
+const Layout = ({
+  children,
+  className,
+}: {
+  children?: any;
+  className?: string;
+}) => (
+  <FullHeight className={className}>
     <Header>
       <Nav />
     </Header>
