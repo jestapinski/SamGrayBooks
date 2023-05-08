@@ -4,6 +4,10 @@ import { H2 } from "../components/Text";
 const AuthorPage = () => (
   <Layout>
     <H2>Author</H2>
+    <p>
+      Sam Gray currently resides in NYC and is excited to be creating new works
+      related to body positivity and creating growth mindsets for children.
+    </p>
   </Layout>
 );
 
