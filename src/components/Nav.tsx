@@ -124,7 +124,7 @@ const NavLinks = () => (
     </NavElement>
     <NavElement>
       {/* @ts-ignore */}
-      <MailLink href="mailto:samgray@gmail.com">Contact</MailLink>
+      <MailLink href="mailto:samgray.author@gmail.com">Contact</MailLink>
     </NavElement>
   </>
 );
